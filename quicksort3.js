@@ -21,7 +21,7 @@ function quicksort(arr) {
             rightArray.push(arr[i]);
         }
     }
-    if (leftArray.length !== 0 && rightArray.length !== 0) 
+    if (leftArray.length !== 0 && rightArray.length !== 0) {
         return [...quicksort(leftArray), pivot, ...quicksort(rightArray)];
     }
     else if (leftArray.length !== 0) {
